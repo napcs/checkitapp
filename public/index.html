@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+  <html manifest="tasks.manifest">
+    <head>
+      <script type="text/javascript" 
+        charset="utf-8" src="jquery.min.js">
+      </script>
+      
+      <!-- http://developer.apple.com/safari/library/documentation/appleapplications/reference/safariwebcontent/configuringwebapplications/configuringwebapplications.html -->
+      
+      <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+
+      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+      
+      <link rel="apple-touch-icon" href="icon.png"/>
+
+      <link rel="apple-touch-startup-image" href="splash.png" />
+      
+      <link rel="stylesheet" href="app.css" type="text/css" media="screen, mobile" title="main" charset="utf-8">
+
+      <title>CheckIt</title>
+    
+  </head>
+  <body>
+
+    <header>
+      <h1>Checkit</h1>
+    </header>
+    
+    <div id="notice">
+    </div>
+
+    <section>
+      <form id="new_form">
+        <label for="task">Task</label>
+        <input id="task" type="text" name="task" value="" >
+        <input type="submit" value="Add">
+      </form>
+    </section>
+
+    <section>
+      <form id="tasks_form">
+        <table id="tasks">
+          <tbody>
+            <tr>
+              <th>My List</th>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </section>
+
+    <script type="text/javascript" src="app.js"></script>
+    
+  </body>
+</html>

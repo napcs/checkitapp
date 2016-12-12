@@ -1,0 +1,20 @@
+= CheckIt
+Simple Todo List application using HTML5. Works on iPad, iPod Touch, iPhone, and Android devices, as well as on PCs and Macs running Chrome and Safari.
+
+All data persists on the user's device, and the application can run in offline mode using HTML5's manifest.
+
+== Installation
+
+There are two ways to run this. 
+
+=== Ruby and Sinatra
+The first method involves serving this application using Sinatra. You need Ruby 1.8.6 and Sinatra, and a web server that can run it. I recommend Heroku for this. The only reason you need to use this method is if you don't know how to set up MIME types on your server for the offline manifest.
+
+
+=== Static Webpages
+The second method involves putting all the files in the /public folder on your web server and set a MIME type on your server so that it serves tasks.manifest with the "text/cache-manifest" MIME type.
+
+Then copy the contents of /views/manifest into the file /tasks.manifest. 
+
+ If you don't do this, then it won't work offline.
+

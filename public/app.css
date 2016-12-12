@@ -1,0 +1,100 @@
+h1,h2,h3,h4,h5,h6,form,table,ul,li, p{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    overflow:hidden;
+    background: #d7d7d7;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+    font-size: 32px;
+}
+
+header{
+  display: block;
+  height: 40px;
+  text-align: center;
+  background: 
+    -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.17, rgb(174,192,212)),
+      color-stop(0.59, rgb(230,231,242))
+    );
+  background:;
+    -moz-linear-gradient(
+      center bottom,
+      rgb(174,192,212) 17%,
+      rgb(230,231,242) 59%
+    );
+}
+
+header h1{
+  font-size: 20px;
+}
+
+.disabled{
+  color: #B2B2B2;
+  text-decoration: line-through;
+  
+}
+
+td{
+  border-bottom: 1px solid #000;
+}
+
+td:last-child{
+  border-bottom: none;
+}
+
+#notice{
+  color: #fff;
+  height: 40px;
+  width: 100%;
+  background-color: #20AF2B;
+  text-align: center;
+}
+.error{
+  background-color: #f00 !important;
+  
+}
+form{
+  margin: 10px;
+}
+
+#tasks {
+    width: 100%;
+    height: 100%;
+    background:#fff;
+    -webkit-border-radius: 10px;
+    
+}
+
+#notice, form, #tasks{margin-bottom:20px;}
+
+label, th, td{
+  font-size: 40px;
+}
+input{
+  height: 40px;
+  border: 1px solid #000;
+  -webkit-border-radius: 10px;
+  font-size:32px;
+  
+}
+
+#task{width:50%;}
+
+input[type=button]{
+  float:right;
+}
+
+input[type=submit]{
+   width:15%;
+  background-color: #72ADE9;
+  color: #fff;
+  height: 44px;
+  }
